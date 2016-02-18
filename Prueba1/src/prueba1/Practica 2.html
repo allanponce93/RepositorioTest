@@ -13,28 +13,32 @@ and open the template in the editor.
     <body>
         <form action="paginaDestino" metod="get">
             <table border="3" >
-                <tr>Formulario de Contacto</tr>
                 <tr>
-                    <td> Nombre: </td>
+                    <td colspan="2" align="center" style="color: white;background-color: cadetblue">Formulario de Contacto </td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightblue"> Nombre: </td>
                     <td> <input type="text" 
                                 name="nombre" 
                                 value="" 
                                 maxlength="20" 
+                                style="width:99%;background-color: cadetblue"
                                 placeholder="Digite su nombre" 
                                 required="required"/> </td>
                 </tr>            
                 <tr>
-                    <td> Apellido: </td>
+                    <td style="background-color: lightblue"> Apellido: </td>
                     <td> <input type="text" 
                                 name="nombre" 
                                 value="" 
-                                maxlength="20" 
-                                placeholder="Digite su Apellido" 
+                                maxlength="40" 
+                                placeholder="Digite su Apellido"
+                                style="width:99%;background-color: cadetblue"
                                 required="required"/> </td>
                 </tr>            
                 <tr>
-                    <td> Fecha Nacimiento: </td>
-                    <td>
+                    <td style="background-color: lightblue"> Fecha Nacimiento: </td>
+                    <td style="background-color: cadetblue">
                         <select name="dia">
                             <option value="0" selected="selected">0</option>
                             <option value="1">1</option>
@@ -118,22 +122,29 @@ and open the template in the editor.
                     </td>
                 </tr>            
                 <tr>
-                    <td> E-mail: </td>
+                    <td style="background-color: lightblue"> E-mail: </td>
                     <td> <input type="text" 
                                 name="email" 
                                 value="" 
-                                maxlength="20" 
+                                maxlength="40"
+                                style="width:99%;background-color: cadetblue"
                                 placeholder="Digite su E-mail" 
                                 required="required"/> </td>
                 </tr>            
                 <tr>
-                    <td> Comentarios: </td>
-                    <td>  <textarea name="comentarios" required="required"
+                    <td style="background-color: lightblue"> Comentarios: </td>
+                    <td>  <textarea name="comentarios" 
+                                    required="required"
+                                    style="resize: none;width:97%;height: 100%; background-color: cadetblue"
                                     placeholder="">
                         </textarea></td>
                 </tr>
                 <tr>
-                    <td colspan="2" align="center"><input type="submit" name="submit" value="Enviar"/></td>
+                    <td colspan="2" align="center" style="background-color: lightblue"><input type="submit" 
+                                                          name="submit" 
+                                                          value="Enviar" 
+                                                          style="color: #ffffff; background-color: #FF9900" 
+                                                          /></td>
                 </tr>
             </table>
         </form>
